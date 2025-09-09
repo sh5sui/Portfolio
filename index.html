@@ -12,8 +12,8 @@
   }
 
   @keyframes fadeBackground {
-    from { background-color: black; }
-    to { background-color: pink; }
+    from { background-color: white; }
+    to { background-color: darkslategray; }
   }
 
   section {
@@ -27,10 +27,6 @@
 
   h1, p, a {
     color: ghostwhite;
-  }
-
-  p {
-    font-size: 115%;
   }
 
   hr {
@@ -49,36 +45,48 @@
   html {
     scroll-behavior: smooth;
   }
+
+  #home {
+    position: relative;
+    display: flex;
+  }
+
+  .responsive-title {
+  color: whitesmoke;
+  font-size: clamp(25px, 8vw, 60px);
+  position: absolute;
+  top: 10%;
+  left: 7%;
+}
+
+  .top-hr {
+    position: absolute;
+    color: whitesmoke;
+    border: none;
+    height: 5px;
+    width: clamp(100px, 150vw, 2300px);
+    margin: 20px(auto);
+    top: 3.5%;
+  }
+
+  .intro {
+    position: absolute;
+    color: whitesmoke;
+    font-size: clamp(8px, 3vw, 20px);
+    top: 20%;
+    left: 7%;
+  }
 </style>
 </head>
 <body>
 
 <section id="home">
-  <h1>My Portfolio</h1>
-  <hr>
-  <p>Hi! My name is Cody or Kur. I'm a starter web developer with a dream to work at a tech company.</p>
+  <h1 class="responsive-title">My Portfolio</h1>
+  <hr class="top-hr">
+  <p class="intro">Hi! my name is Cody and this is my portfolio website.</p>
   <a href="#AboutMe">About Me</a>
   <a href="#work">Go to My Work</a>
   <hr>
-</section>
-
-<section id="work">
-  <h1>My Work</h1>
-  <hr>
-  <a href="https://github.com/sh5sui" target="_blank">My Github</a>
-  <a href="mailto:codyd25@zohomail.eu">Send me an email!</a>
-  <a href="#AboutMe">About Me</a>
-  <a href="#home">Back to Top</a>
-  <hr>
-</section>
-
-<section id="AboutMe">
-  <h1>About Me</h1>
-  <hr>
-  <p>My names Cody and I'm a 15 year old starter developer. I've had dreams of being an accountant for some time but recently that has changed. I started getting into coding about a year ago but never took it too seriously until now. In the recent time, I've been thinking abuot my carrer options and I think considering I have a big interest in things like computers, apps and how they run, websites, and other thing's taking up a career in web development would be a good option for me. Learning HTML and CSS and developing this site will be the first big step for me to reaching my goal now of becoming both familiar with these coding languages and also trying to eventually land myself an internship over the next summer.</p>
-  <hr>
-  <a href="#work">Go to My Work</a>
-  <a href="#home">Back to Top</a>
 </section>
 
 </body>
