@@ -25,10 +25,6 @@
     text-align: center;
   }
 
-  h1, p, a {
-    color: ghostwhite;
-  }
-
   hr {
     height: 2px;
     border: none;
@@ -51,6 +47,11 @@
     display: flex;
   }
 
+    #Work {
+    position: relative;
+    display: flex;
+  }
+
   .responsive-title {
   color: whitesmoke;
   font-size: clamp(25px, 8vw, 60px);
@@ -58,14 +59,31 @@
   top: 10%;
 }
 
+  .work-title {
+  color: whitesmoke;
+  font-size: clamp(25px, 8vw, 60px);
+  position: absolute;
+  top: 110%;
+}
+
   .top-hr {
     position: absolute;
     color: whitesmoke;
     border: none;
-    height: 5px;
+    height: 3px;
     width: clamp(100px, 150vw, 2300px);
     margin: 20px(auto);
-    top: 3.5%;
+    top: 7%;
+  }
+
+    .sectop-hr {
+    position: absolute;
+    color: whitesmoke;
+    border: none;
+    height: 3px;
+    width: clamp(100px, 150vw, 2300px);
+    margin: 20px(auto);
+    top: 107%;
   }
 
   .intro {
@@ -84,6 +102,15 @@
     width: clamp(200px, 50vw, 800px);
     padding: 0 10px;
   }
+
+  .Work {
+    position: absolute;
+    color:whitesmoke;
+    font-size: clamp(8px, 3vw, 20px);
+    top: 4.5%;
+    width: clamp(200px, 50vw, 800px);
+    padding: 0 10px;
+  }
 </style>
 </head>
 <body>
@@ -93,9 +120,12 @@
   <hr class="top-hr">
   <p class="intro">Hi! my name is Cody and this is my portfolio website.</p>
   <p class="moreintro">This website is for my portfolio for a way for me to learn HTML and CSS. The whole reason for me doing this is because I'd love to become a web designer in future for frontend or even a fullstack developer. I will always be improving on this site as it's something I like doing and it's been a nice way for me to pass time.</p>
-  <a href="#AboutMe">About Me</a>
-  <a href="#work">Go to My Work</a>
-  <hr>
+  <a href="#work" class="Work">Go to My Work</a>
+</section>
+
+<section id="work">
+  <h1 class="work-title">My Work</h1>
+  <hr class="sectop-hr">
 </section>
 
 </body>
