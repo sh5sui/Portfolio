@@ -25,6 +25,23 @@
     text-align: center;
   }
 
+  body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(120deg, #1f4037, #99f2c8);
+}
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 1s ease;
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
   hr {
     height: 2px;
     border: none;
@@ -52,6 +69,36 @@
     display: flex;
   }
 
+  .projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 50px;
+}
+
+.card {
+  background: #333;
+  color: white;
+  padding: 20px;
+  border-radius: 15px;
+  width: 250px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.4);
+}
+
   .responsive-title {
   color: whitesmoke;
   font-size: clamp(25px, 8vw, 60px);
@@ -71,7 +118,7 @@
     color: whitesmoke;
     border: none;
     height: 3px;
-    width: clamp(100px, 150vw, 2300px);
+    width: clamp(40px, 85vw, 2300px);
     margin: 20px(auto);
     top: 7%;
   }
@@ -81,9 +128,9 @@
     color: whitesmoke;
     border: none;
     height: 3px;
-    width: clamp(100px, 150vw, 2300px);
+    width: clamp(40px, 85vw, 2300px);
     margin: 20px(auto);
-    top: 107%;
+    top: 110%;
   }
 
   .intro {
@@ -100,6 +147,14 @@
     font-size: clamp(8px, 3vw, 20px);
     top: 25%;
     width: clamp(200px, 50vw, 800px);
+    padding: 0 10px;
+  }
+
+  .bthome {
+    position: absolute;
+    color:whitesmoke;
+    font-size: clamp(8px, 3vw, 20px);
+    top: 107%;
     padding: 0 10px;
   }
 
@@ -124,8 +179,31 @@
 </section>
 
 <section id="work">
+  <a href="#home" class="bthome">Back to Top</a>
   <h1 class="work-title">My Work</h1>
   <hr class="sectop-hr">
+  <div class="projects">
+    <div class="card">
+      <img src="project1.jpg" alt="Placeholder">
+      <h2>Placeholder</h2>
+      <p>Placeholder</p>
+      <a href="#" class="btn">Placeholder</a>
+    </div>
+
+    <div class="card">
+      <img src="project2.jpg" alt="Placeholder">
+      <h2>Placeholder</h2>
+      <p>Placeholder</p>
+      <a href="#" class="btn">Placeholder</a>
+    </div>
+
+    <div class="card">
+      <img src="project3.jpg" alt="Placeholder">
+      <h2>Placeholder</h2>
+      <p>Placeholder</p>
+      <a href="#" class="btn">Placeholder</a>
+    </div>
+  </div>
 </section>
 
 </body>
